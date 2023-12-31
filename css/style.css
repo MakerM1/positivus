@@ -57,6 +57,18 @@ body::-webkit-scrollbar-thumb:hover {
     font-size: 30px;
 }
 
+
+.text-container--style {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    max-width: 900px;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+}
+
+
 /* || header */
 
 .main-header {
@@ -260,16 +272,6 @@ body::-webkit-scrollbar-thumb:hover {
     margin-bottom: 123px;
 }
 
-.services__text-container {
-    display: flex;
-    justify-content: space-around;
-    gap: 40px;
-    max-width: 798px;
-    width: 100%;
-    flex-wrap: wrap;
-    margin-bottom: 80px;
-}
-
 .services__text {
     max-width: 580px;
     width: 100%;
@@ -385,6 +387,7 @@ body::-webkit-scrollbar-thumb:hover {
 /* || proposal section */
 .proposal-section {
     padding: 20px;
+    margin-bottom: 163px;
 }
 
 .proposal__main-container {
@@ -421,6 +424,12 @@ body::-webkit-scrollbar-thumb:hover {
     width: 100%;
 }
 
+@media (max-width: 448px) {
+    .proposal__button {
+        font-size: 20px;
+    }
+}
+
 @media (max-width: 1214px) {
 
     .proposal__left {
@@ -429,5 +438,85 @@ body::-webkit-scrollbar-thumb:hover {
 
     .proposal__right {
         display: none;
+    }
+}
+
+/* || case studies section */
+
+.case-studies-section {
+    padding: 20px;
+}
+
+.case__text {
+    max-width: 580px;
+    width: 100%;
+}
+
+.case__info-computer {
+    width: 100%;
+    background: var(--Dark, #191A23);
+    color: white;
+    padding: 70px 60px;
+    border-radius: 45px;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.case__info-computer--text {
+    color: white;
+    max-width: 286px;
+    width: 100%;
+}
+
+.case__card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.line {
+    height: 186px;
+    width: 1px;
+    background-color: white;
+}
+
+.case__info-computer--link span {
+    vertical-align: bottom;
+    margin-right: 10px;
+    color: var(--Green, #B9FF66);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.case__info-computer--link img {
+    vertical-align: bottom;
+}
+
+@media (max-width: 925px) {
+    .case__text {
+        text-align: center;
+    }
+
+    .case__info-computer {
+        background-color: transparent;
+        max-width: max-content;
+        overflow-x: scroll;
+        justify-content: space-between;
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .case__card {
+        background: var(--Dark, #191A23);
+        padding: 42px 50px;
+        width: 350px;
+        flex-shrink: 0;
+        border-radius: 45px;
+        scroll-snap-align: center;
     }
 }
