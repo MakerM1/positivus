@@ -257,6 +257,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .services-section {
     padding: 10px;
+    margin-bottom: 123px;
 }
 
 .services__text-container {
@@ -272,6 +273,12 @@ body::-webkit-scrollbar-thumb:hover {
 .services__text {
     max-width: 580px;
     width: 100%;
+}
+
+@media (max-width: 816px) {
+    .services__text {
+        text-align: center;
+    }
 }
 
 .services__cards-container {
@@ -371,6 +378,56 @@ body::-webkit-scrollbar-thumb:hover {
     }
 
     .card__learn-more--text {
+        display: none;
+    }
+}
+
+/* || proposal section */
+.proposal-section {
+    padding: 20px;
+}
+
+.proposal__main-container {
+    background: var(--Grey, #F3F3F3);
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 60px;
+    border-radius: 45px;
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.proposal__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 26px;
+    align-items: flex-start;
+}
+
+.proposal__text {
+    max-width: 500px;
+    width: 100%;
+}
+
+.proposal__heading {
+    font-size: 30px;
+    font-weight: 500;
+    max-width: 500px;
+    width: 100%;
+}
+
+@media (max-width: 1214px) {
+
+    .proposal__left {
+        align-items: stretch;
+    }
+
+    .proposal__right {
         display: none;
     }
 }
