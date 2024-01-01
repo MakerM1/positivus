@@ -68,6 +68,17 @@ body::-webkit-scrollbar-thumb:hover {
     margin-bottom: 80px;
 }
 
+.input--style {
+    width: 100%;
+    padding: 18px 30px;
+    border: 1px solid black;
+    border-radius: 14px;
+    outline: none;
+    color: black;
+    margin-top: 10px;
+    resize: none;
+}
+
 
 /* || header */
 
@@ -864,4 +875,49 @@ body::-webkit-scrollbar-thumb:hover {
 .nav__right-arrow i:hover {
     color: rgb(255, 255, 255);
     transform: translateX(5px);
+}
+
+/* || contact section */
+
+.contact-section {
+    padding: 20px;
+}
+
+.contact__text {
+    max-width: 323px;
+    width: 100%;
+}
+
+.contact-container {
+    width: 100%;
+    background-color: var(--Grey, #F3F3F3);
+    border-radius: 45px;
+    padding: 60px;
+    background-image: url('../images/background-img-1.svg');
+    background-repeat: no-repeat;
+    background-position: right -325px center;
+}
+
+@media (max-width: 755px) {
+    .contact-container {
+        background-image: none;
+    }
+}
+
+.contact__radios {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    max-width: 276px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.contact__form {
+    max-width: 556px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
