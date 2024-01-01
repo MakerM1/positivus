@@ -757,3 +757,111 @@ body::-webkit-scrollbar-thumb:hover {
         flex-direction: column;
     }
 }
+
+/* || testimonials section */
+
+.testimonilas-section {
+    padding: 20px;
+    margin-bottom: 140px;
+}
+
+.testimonilas__text {
+    max-width: 473px;
+    width: 100%;
+}
+
+.testimonial-container {
+    background-color: #191A23;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 68px 20px;
+    border-radius: 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 124px;
+}
+
+.testimonial__top {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.testimonial__bubble-container {
+    position: relative;
+    background-color: #191A23;
+    margin-bottom: 48px;
+}
+
+.bubble-text {
+    color: white;
+    max-width: 606px;
+    width: 100%;
+    border: 2px solid var(--Green, #B9FF66);
+    padding: 45px 20px;
+    border-radius: 45px;
+}
+
+.corner {
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--Green, #B9FF66);
+    border-left: none;
+    border-top: none;
+    transform: rotate(45deg);
+    position: absolute;
+    left: 50px;
+    bottom: -24px;
+    background-color: #191A23;
+}
+
+.testimonial__name-occupation {
+    align-self: flex-end;
+    max-width: 540px;
+    width: 100%;
+}
+
+.testimonial__name {
+    color: var(--Green, #B9FF66);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.testimonial__occupation {
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+}
+
+.testimonial__bottom {
+    max-width: 606px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__left-arrow i {
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 25px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.nav__left-arrow i:hover {
+    color: rgba(255, 255, 255, 0.418);
+    transform: translateX(-5px);
+}
+
+.nav__right-arrow i {
+    font-size: 25px;
+    color: white;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.nav__right-arrow i:hover {
+    color: rgb(255, 255, 255);
+    transform: translateX(5px);
+}
