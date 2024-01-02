@@ -21,16 +21,21 @@
   <body>
     <header class="main-header">
       <div class="main-header__left">
+        <img
+          src="images/icon-logo.svg"
+          alt="phone logo"
+          class="header__logo--phone"
+        />
         <img src="images/Logo-1.svg" alt="logo" class="header__logo" />
       </div>
       <div class="main-header__right">
         <nav class="main-header__nav">
           <ul class="main-header__nav-items">
             <li class="main-header__nav-item">
-              <a href="#"> About us </a>
+              <a href="#about-section"> About us </a>
             </li>
             <li class="main-header__nav-item">
-              <a href="#">Services</a>
+              <a href="#services-section">Services</a>
             </li>
             <li class="main-header__nav-item">
               <a href="#">Use Cases</a>
@@ -42,7 +47,10 @@
               <a href="#">Blog</a>
             </li>
             <li>
-              <a href="#" class="main-header__nav-item main-header__nav-button">
+              <a
+                href="#contact-section"
+                class="main-header__nav-item main-header__nav-button"
+              >
                 Request a quote
               </a>
             </li>
@@ -56,8 +64,10 @@
       </div>
     </header>
 
+    <div class="overlay"></div>
+
     <main>
-      <section class="about-section">
+      <section class="about-section" id="about-section">
         <div class="about__main-container container-max-width--style">
           <div class="about__top">
             <div class="about__left">
@@ -124,7 +134,7 @@
         </div>
       </section>
 
-      <section class="services-section">
+      <section class="services-section" id="services-section">
         <div class="services__main-container container-max-width--style">
           <div class="services__text-container text-container--style">
             <h2 class="services__label label--style">Services</h2>
@@ -381,7 +391,7 @@
         </div>
       </section>
 
-      <section class="case-studies-section">
+      <section class="case-studies-section" id="use-cases">
         <div class="case__main-container container-max-width--style">
           <div class="case__text-container text-container--style">
             <h2 class="case__label label--style">Case Studies</h2>
@@ -794,7 +804,7 @@
         </div>
       </section>
 
-      <section class="contact-section">
+      <section class="contact-section" id="contact-section">
         <div class="contact__main-container container-max-width--style">
           <div class="contact__text-container text-container--style">
             <h2 class="label--style">Contact Us</h2>
